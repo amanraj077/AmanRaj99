@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance Analyzer - Zero Gravity</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <div class="controls">
+        <h1>Attendance Analyzer</h1>
+        <p>Status: <span id="connection-status">Connecting...</span></p>
+    </div>
+
+    <div id="main-scroll-container">
+        <div id="dashboard-container">
+            <div class="chart-panel">
+                <canvas id="categoryChart"></canvas>
+            </div>
+            <div class="chart-panel">
+                <canvas id="distributionChart"></canvas>
+            </div>
+        </div>
+
+        <div id="space-container">
+            <!-- Floating cards will be injected here by JavaScript -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
